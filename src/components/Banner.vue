@@ -21,11 +21,12 @@ export default {
 
 <style scoped>
 .bg-banner {
-  background-image: url("https://picsum.photos/seed/picsum/200/300");
+  background-image: url("../assets/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
-  padding: 8rem;
+  padding: 10rem;
+  width: 100%;
 }
 
 .banner {

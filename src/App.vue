@@ -2,6 +2,19 @@
   <div id="app">
     <NavBar />
     <Banner />
+    <div class="container">
+      <Social />
+      <LatestPost />
+      <hr class="hor" />
+      <DesignSection />
+      <hr class="hor" />
+      <DesignLove />
+      <hr class="hor" />
+      <ShopSourcebook />
+      <hr class="hor" />
+      <TenofBest />
+    </div>
+
     <router-view />
     <Footer />
   </div>
@@ -12,12 +25,24 @@ import Vue from "vue";
 import NavBar from "@/components/NavBar.vue";
 import Footer from "@/components/Footer.vue";
 import Banner from "@/components/Banner.vue";
+import Social from "@/components/Social.vue";
+import LatestPost from "@/components/LatestPost.vue";
+import DesignSection from "@/components/Design.vue";
+import DesignLove from "@/components/DesignLove.vue";
+import TenofBest from "@/components/TenofBest.vue";
+import ShopSourcebook from "@/components/ShopSourebook.vue";
 
 export default Vue.extend({
   name: "App",
   components: {
     NavBar,
     Banner,
+    Social,
+    DesignSection,
+    DesignLove,
+    LatestPost,
+    TenofBest,
+    ShopSourcebook,
     Footer,
   },
 });
@@ -43,5 +68,10 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.hor {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 </style>
