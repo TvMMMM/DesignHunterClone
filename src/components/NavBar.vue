@@ -20,11 +20,11 @@
         </div>
         <!-- left-side -->
         <!-- brand -->
-        <a class="navbar-brand order-2 me-lg-0" href="#"
+        <a class="navbar-brand order-1 me-lg-0" href="#"
           ><img src="../assets/brand.png" alt="brand" width="250px"
         /></a>
         <button
-          class="navbar-toggler custom-toggler order-1"
+          class="navbar-toggler custom-toggler order-2"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target=".navigation-menu"
@@ -47,7 +47,10 @@
               >
                 ABOUT
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul
+                class="dropdown-menu mx-auto"
+                aria-labelledby="navbarDropdown"
+              >
                 <li><a class="dropdown-item" href="#">CONTACT</a></li>
                 <li><a class="dropdown-item" href="#">ABOUT</a></li>
                 <li>
@@ -62,9 +65,12 @@
               <a class="nav-link">SOURCE BOOK</a>
             </li>
           </ul>
-          <button class="search-btn">
-            <b-icon icon="search"></b-icon>
-          </button>
+          <form class="d-flex justify-content-center">
+            <input class="form-control" type="search" aria-label="search" />
+            <button class="search-btn">
+              <b-icon icon="search"></b-icon>
+            </button>
+          </form>
         </div>
         <!-- right-side -->
       </div>
@@ -82,12 +88,40 @@ export default {
 </script>
 
 <style scoped>
+@media (min-width: 1200px) {
+  ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
+    display: block;
+    border: none;
+    margin-top: -10px;
+  }
+}
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
     width: 100%;
     height: 5rem;
   }
+  .dropdown-menu a {
+    font-size: 11px !important;
+    line-height: 10px;
+    text-align: left !important;
+  }
+  .dropdown-menu {
+    width: auto !important;
+  }
 }
+
+@media (min-width: 320px) {
+  .dropdown-menu a {
+    font-size: 11px !important;
+    line-height: 10px;
+    text-align: center;
+  }
+  .dropdown-menu {
+    width: 400px;
+  }
+}
+
 .navbar ul a {
   font-family: "Lato", sans-serif;
   font-size: 12px;
@@ -99,15 +133,16 @@ export default {
   font-weight: bolder;
 }
 
-.dropdown-menu a {
-  font-size: 11px !important;
-  line-height: 10px;
+.form-control {
+  width: 8rem;
+  margin-left: 2rem;
+  height: 30px;
+  margin-right: 0.1rem;
 }
 
 .search-btn {
   border: none;
   background-color: white;
-  margin-left: 3rem;
   justify-content: center;
 }
 
@@ -117,10 +152,5 @@ export default {
 
 .custom-toggler.navbar-toggler {
   border-color: rgb(0, 0, 0);
-}
-
-ul.navbar-nav li.dropdown:hover ul.dropdown-menu {
-  display: block;
-  border: none;
 }
 </style>

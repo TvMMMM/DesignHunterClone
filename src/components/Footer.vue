@@ -39,7 +39,6 @@ export default {
   padding: 50px 0;
   color: #000000;
   background-color: #fdfdfd;
-  box-shadow: 0px -1px 0px #888;
 }
 
 .footer-light h3 {
@@ -115,13 +114,15 @@ export default {
   line-height: 36px;
   display: inline-block;
   text-align: center;
-  margin: 0 8px;
+  margin: 0 6px;
   color: rgb(0, 0, 0);
   opacity: 0.75;
+  transition: 0.5s;
 }
 
 .footer-light .item.social > a:hover {
   opacity: 0.9;
+  transform: scale(1.2);
 }
 
 .footer-light .copyright {
