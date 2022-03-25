@@ -2,7 +2,9 @@
   <div>
     <div class="row mb-2">
       <div class="col-6 text span-6"><h6>DESIGN</h6></div>
-      <div class="col-6 link span-6"><a href="#">See All in Design</a></div>
+      <div class="col-6 link span-6">
+        <router-link to="#">See All in Design</router-link>
+      </div>
     </div>
     <div class="row content justify-content-sm-center">
       <div class="col-lg-6 col-md-6 col-sm-12 post">
@@ -13,7 +15,7 @@
             src="../assets/Design1.png"
             style="height: 700px"
           />
-          <div class="card-body text-left">
+          <div class="card-body">
             <h6 class="card-title">Better Basics: minimalist bedding</h6>
           </div>
         </div>
@@ -26,7 +28,7 @@
             src="../assets/Design2.png"
             style="height: 700px"
           />
-          <div class="card-body text-left">
+          <div class="card-body">
             <h6 class="card-title">
               New sustainable fabric collection from Kirkby Design
             </h6>
@@ -95,5 +97,6 @@ export default {
 
 .card-body {
   padding: 16px 16px 16px 0;
+  text-align: left;
 }
 </style>

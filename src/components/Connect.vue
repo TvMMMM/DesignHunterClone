@@ -3,11 +3,11 @@
     <div class="content-align">
       <div class="col-12"><h6>CONNECT WITH DESIGN HUNTER</h6></div>
       <div class="col-12 item social">
-        <a href="#"><b-icon icon="twitter"></b-icon></a
-        ><a href="#"><b-icon icon="facebook"></b-icon></a
-        ><a href="#"><b-icon icon="google"></b-icon></a
-        ><a href="#"><b-icon icon="mailbox"></b-icon></a>
-        <a href="#"><b-icon icon="instagram"></b-icon></a>
+        <router-link to="#"><b-icon icon="twitter"></b-icon></router-link
+        ><router-link to="#"><b-icon icon="facebook"></b-icon></router-link
+        ><router-link to="#"><b-icon icon="google"></b-icon></router-link
+        ><router-link to="#"><b-icon icon="mailbox"></b-icon></router-link>
+        <router-link to="#"><b-icon icon="instagram"></b-icon></router-link>
       </div>
       <div class="col-12 flw-btn">
         <h6 class="follow-btn">FOLLOW ON BLOGLOVIN</h6>

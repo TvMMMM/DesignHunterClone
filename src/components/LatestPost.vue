@@ -2,7 +2,9 @@
   <div>
     <div class="row mb-2">
       <div class="col-6 text span-6"><h6>LASTEST POST</h6></div>
-      <div class="col-6 link span-6"><a href="#">View all post</a></div>
+      <div class="col-6 link span-6">
+        <router-link to="#">View all post</router-link>
+      </div>
     </div>
     <section class="pt-1 pb-2">
       <div class="d-flex justify-content-end">
@@ -42,7 +44,7 @@
                         src="../assets/1.png"
                         style="height: 500px"
                       />
-                      <div class="card-body text-left">
+                      <div class="card-body">
                         <h6 class="card-title">10 of the best</h6>
                         <p class="card-text">
                           10 of the best... modern minimalist rugs
@@ -58,7 +60,7 @@
                         src="../assets/2.png"
                         style="height: 500px"
                       />
-                      <div class="card-body text-left">
+                      <div class="card-body">
                         <h6 class="card-title">Interiors, Architecture</h6>
                         <p class="card-text">
                           Zen Den | A 1960s ranch style bungalow updated
@@ -74,7 +76,7 @@
                         src="../assets/3.png"
                         style="height: 500px"
                       />
-                      <div class="card-body text-left">
+                      <div class="card-body">
                         <h6 class="card-title">
                           Design Hunter loves, Wellness & Beauty
                         </h6>
@@ -94,7 +96,7 @@
                         src="../assets/4.png"
                         style="height: 500px"
                       />
-                      <div class="card-body text-left">
+                      <div class="card-body">
                         <h6 class="card-title">Most wanted</h6>
                         <p class="card-text">
                           This month's most wanted: February
@@ -110,7 +112,7 @@
                         src="../assets/5.png"
                         style="height: 500px"
                       />
-                      <div class="card-body text-left">
+                      <div class="card-body">
                         <h6 class="card-title">Interiors</h6>
                         <p class="card-text">
                           Store decor | a Japandi style interior for shoe brand
@@ -127,7 +129,7 @@
                         src="../assets/6.png"
                         style="height: 500px"
                       />
-                      <div class="card-body text-left">
+                      <div class="card-body">
                         <h6 class="card-title">Technology</h6>
                         <p class="card-text">
                           A new chapter in the history of Braun audio
@@ -169,6 +171,11 @@ export default {
   text-decoration: none;
   padding-bottom: 3px;
   border-bottom: 1px solid black;
+  transition: 200ms;
+}
+
+a:hover {
+  font-weight: 300;
 }
 
 .card-title {
@@ -186,6 +193,7 @@ export default {
 
 .card-body {
   padding: 16px 16px 16px 0;
+  text-align: left;
 }
 
 .btn {

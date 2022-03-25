@@ -3,7 +3,7 @@
     <div class="row mb-2">
       <div class="col-6 text span-6"><h6>10 OF THE BEST...</h6></div>
       <div class="col-6 link span-6">
-        <a href="#">See All 10 of the best posts</a>
+        <router-link to="#">See All 10 of the best posts</router-link>
       </div>
     </div>
     <section class="pt-1 pb-2">
@@ -16,7 +16,7 @@
               src="../assets/1.png"
               style="height: 400px"
             />
-            <div class="card-body text-left">
+            <div class="card-body">
               <h6 class="card-title">10 of the best</h6>
               <p class="card-text">10 of the best... modern minimalist rugs</p>
             </div>
@@ -30,7 +30,7 @@
               src="../assets/10ofbest1.png"
               style="height: 400px"
             />
-            <div class="card-body text-left">
+            <div class="card-body">
               <h6 class="card-title">Interiors, Architecture</h6>
               <p class="card-text">
                 Zen Den | A 1960s ranch style bungalow updated
@@ -46,7 +46,7 @@
               src="../assets/10ofbest2.png"
               style="height: 400px"
             />
-            <div class="card-body text-left">
+            <div class="card-body">
               <h6 class="card-title">Design Hunter loves, Wellness & Beauty</h6>
               <p class="card-text">Verso: skincare simplified</p>
             </div>
@@ -98,6 +98,7 @@ export default {
 
 .card-body {
   padding: 16px 16px 16px 0;
+  text-align: left;
 }
 
 .btn {

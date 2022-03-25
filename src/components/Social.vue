@@ -1,10 +1,14 @@
 <template>
   <div class="item social">
-    <a href="#"><b-icon icon="twitter"></b-icon></a
-    ><a href="#"><b-icon icon="facebook"></b-icon></a
+    <a href="https://twitter.com/designhunter_uk"
+      ><b-icon icon="twitter"></b-icon></a
+    ><a href="https://www.facebook.com/designhunteruk/"
+      ><b-icon icon="facebook"></b-icon></a
     ><a href="#"><b-icon icon="google"></b-icon></a
     ><a href="#"><b-icon icon="mailbox"></b-icon></a>
-    <a href="#"><b-icon icon="instagram"></b-icon></a>
+    <a href="https://www.instagram.com/designhunter_uk/"
+      ><b-icon icon="instagram"></b-icon
+    ></a>
   </div>
 </template>
 

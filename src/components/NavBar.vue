@@ -1,28 +1,32 @@
 <template>
   <div>
     <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
+      <div class="container">
         <!-- left-side -->
         <div
           class="collapse navbar-collapse order-lg-1 order-3 navigation-menu"
         >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">INTERIORS</a>
+              <router-link to="/interiors" class="nav-link"
+                >INTERIORS</router-link
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">DESIGN</a>
+              <router-link to="/design" class="nav-link">DESIGN</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">LIFESTYLE</a>
+              <router-link to="/lifestyle" class="nav-link"
+                >LIFESTYLE</router-link
+              >
             </li>
           </ul>
         </div>
         <!-- left-side -->
         <!-- brand -->
-        <a class="navbar-brand order-1 me-lg-0" href="#"
+        <router-link class="navbar-brand order-1 me-lg-0" to="/"
           ><img src="../assets/brand.png" alt="brand" width="250px"
-        /></a>
+        /></router-link>
         <button
           class="navbar-toggler custom-toggler order-2"
           type="button"
@@ -37,32 +41,48 @@
         >
           <ul class="navbar-nav ms-auto">
             <li class="nav-item dropdown">
-              <a
+              <router-link
+                to="/about"
                 class="nav-link dropdown-toggle"
-                href="#"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 ABOUT
-              </a>
+              </router-link>
               <ul
                 class="dropdown-menu mx-auto"
                 aria-labelledby="navbarDropdown"
               >
-                <li><a class="dropdown-item" href="#">CONTACT</a></li>
-                <li><a class="dropdown-item" href="#">ABOUT</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">PRESS & AWARD</a>
+                  <router-link to="/contact" class="dropdown-item"
+                    >CONTACT</router-link
+                  >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">WORK WITH DESIGN HUNTER</a>
+                  <router-link class="dropdown-item" to="/about"
+                    >ABOUT</router-link
+                  >
+                </li>
+                <li>
+                  <router-link class="dropdown-item" to="/press-and-award"
+                    >PRESS & AWARD</router-link
+                  >
+                </li>
+                <li>
+                  <router-link
+                    class="dropdown-item"
+                    to="/work-with-design-hunter"
+                    >WORK WITH DESIGN HUNTER</router-link
+                  >
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link">SOURCE BOOK</a>
+              <router-link class="nav-link" to="/source-book"
+                >SOURCE BOOK</router-link
+              >
             </li>
           </ul>
           <form class="d-flex justify-content-center">
