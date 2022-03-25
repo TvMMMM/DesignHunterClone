@@ -13,9 +13,12 @@
       <ShopSourcebook />
       <hr class="hor" />
       <TenofBest />
+      <ExploreSection />
+      <GuideSection />
     </div>
-
-    <router-view />
+    <CollabSection />
+    <ConnectSection />
+    <SubcribeSection />
     <Footer />
   </div>
 </template>
@@ -31,6 +34,11 @@ import DesignSection from "@/components/Design.vue";
 import DesignLove from "@/components/DesignLove.vue";
 import TenofBest from "@/components/TenofBest.vue";
 import ShopSourcebook from "@/components/ShopSourebook.vue";
+import ExploreSection from "@/components/Explore.vue";
+import GuideSection from "@/components/Guide.vue";
+import CollabSection from "@/components/Collab.vue";
+import ConnectSection from "@/components/Connect.vue";
+import SubcribeSection from "@/components/Subcribe.vue";
 
 export default Vue.extend({
   name: "App",
@@ -43,6 +51,11 @@ export default Vue.extend({
     LatestPost,
     TenofBest,
     ShopSourcebook,
+    ExploreSection,
+    GuideSection,
+    CollabSection,
+    ConnectSection,
+    SubcribeSection,
     Footer,
   },
 });

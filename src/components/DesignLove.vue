@@ -2,28 +2,28 @@
   <div>
     <div class="text"><h6>DESIGN HUNTER LOVES</h6></div>
     <section class="pt-1 pb-2">
+      <div class="d-flex justify-content-end">
+        <a
+          class="btn mb-1"
+          href="#carouselDesignLoveControls"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <b-icon icon="chevron-left"></b-icon>
+        </a>
+        <a
+          class="btn mb-1"
+          href="#carouselDesignLoveControls"
+          role="button"
+          data-bs-slide="next"
+        >
+          <b-icon icon="chevron-right"></b-icon>
+        </a>
+      </div>
       <div class="row">
-        <div class="col-12 text-right">
-          <a
-            class="btn mb-1"
-            href="#carouselExampleControls2"
-            role="button"
-            data-slide="prev"
-          >
-            <b-icon icon="chevron-left"></b-icon>
-          </a>
-          <a
-            class="btn mb-1"
-            href="#carouselExampleControls2"
-            role="button"
-            data-slide="next"
-          >
-            <b-icon icon="chevron-right"></b-icon>
-          </a>
-        </div>
         <div class="col-12">
           <div
-            id="carouselExampleControls2"
+            id="carouselDesignLoveControls"
             class="carousel slide"
             data-bs-touch="false"
             data-bs-interval="false"

@@ -1,5 +1,5 @@
 <template>
-  <div class="col item social">
+  <div class="item social">
     <a href="#"><b-icon icon="twitter"></b-icon></a
     ><a href="#"><b-icon icon="facebook"></b-icon></a
     ><a href="#"><b-icon icon="google"></b-icon></a
@@ -21,6 +21,7 @@ export default {
 .item.social {
   text-align: center;
   margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 991px) {
@@ -40,8 +41,11 @@ export default {
   margin: 0 6px;
   color: rgb(0, 0, 0);
   opacity: 0.75;
+  transition: 0.5s;
 }
+
 .item.social > a:hover {
-  opacity: 0.9;
+  opacity: 1;
+  transform: scale(1.2);
 }
 </style>

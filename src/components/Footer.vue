@@ -117,10 +117,12 @@ export default {
   margin: 0 6px;
   color: rgb(0, 0, 0);
   opacity: 0.75;
+  transition: 0.5s;
 }
 
 .footer-light .item.social > a:hover {
   opacity: 0.9;
+  transform: scale(1.2);
 }
 
 .footer-light .copyright {
