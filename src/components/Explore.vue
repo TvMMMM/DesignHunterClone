@@ -9,9 +9,6 @@
         <div
           class="d-flex btn mt-auto mb-3 justify-content-md-center justify-content-sm-center"
         >
-          <!-- <h6 class="discover-btn">
-            DISCOVER <b-icon class="ms-2" icon="arrow-right"></b-icon>
-          </h6> -->
           <button class="slide_from_left">
             DISCOVER
             <b-icon class="ms-2" font-scale="0.9" icon="arrow-right"></b-icon>

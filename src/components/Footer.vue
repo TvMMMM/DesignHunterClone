@@ -4,17 +4,21 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 item text link">
-            <a href="#">CONTACT</a>
-            <a href="#">AFFILIATES</a>
-            <a href="#">TERMS & CONDITIONS</a>
-            <a href="#">SUBSCRIBE</a>
+            <router-link to="#">CONTACT</router-link>
+            <router-link to="#">AFFILIATES</router-link>
+            <router-link to="#">TERMS & CONDITIONS</router-link>
+            <router-link to="#">SUBSCRIBE</router-link>
           </div>
           <div class="col item social">
-            <a href="#"><b-icon icon="twitter"></b-icon></a
-            ><a href="#"><b-icon icon="facebook"></b-icon></a
+            <a href="https://twitter.com/designhunter_uk"
+              ><b-icon icon="twitter"></b-icon></a
+            ><a href="https://www.facebook.com/designhunteruk/"
+              ><b-icon icon="facebook"></b-icon></a
             ><a href="#"><b-icon icon="google"></b-icon></a
             ><a href="#"><b-icon icon="mailbox"></b-icon></a>
-            <a href="#"><b-icon icon="instagram"></b-icon></a>
+            <a href="https://www.instagram.com/designhunter_uk/"
+              ><b-icon icon="instagram"></b-icon
+            ></a>
           </div>
         </div>
         <div class="vertical">

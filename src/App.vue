@@ -1,24 +1,7 @@
 <template>
   <div id="app">
     <NavBar />
-    <Banner />
-    <div class="container">
-      <Social />
-      <LatestPost />
-      <hr class="hor" />
-      <DesignSection />
-      <hr class="hor" />
-      <DesignLove />
-      <hr class="hor" />
-      <ShopSourcebook />
-      <hr class="hor" />
-      <TenofBest />
-      <ExploreSection />
-      <GuideSection />
-    </div>
-    <CollabSection />
-    <ConnectSection />
-    <SubcribeSection />
+    <router-view />
     <Footer />
   </div>
 </template>
@@ -27,35 +10,11 @@
 import Vue from "vue";
 import NavBar from "@/components/NavBar.vue";
 import Footer from "@/components/Footer.vue";
-import Banner from "@/components/Banner.vue";
-import Social from "@/components/Social.vue";
-import LatestPost from "@/components/LatestPost.vue";
-import DesignSection from "@/components/Design.vue";
-import DesignLove from "@/components/DesignLove.vue";
-import TenofBest from "@/components/TenofBest.vue";
-import ShopSourcebook from "@/components/ShopSourebook.vue";
-import ExploreSection from "@/components/Explore.vue";
-import GuideSection from "@/components/Guide.vue";
-import CollabSection from "@/components/Collab.vue";
-import ConnectSection from "@/components/Connect.vue";
-import SubcribeSection from "@/components/Subcribe.vue";
 
 export default Vue.extend({
   name: "App",
   components: {
     NavBar,
-    Banner,
-    Social,
-    DesignSection,
-    DesignLove,
-    LatestPost,
-    TenofBest,
-    ShopSourcebook,
-    ExploreSection,
-    GuideSection,
-    CollabSection,
-    ConnectSection,
-    SubcribeSection,
     Footer,
   },
 });

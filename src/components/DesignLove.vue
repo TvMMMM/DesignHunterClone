@@ -40,7 +40,7 @@
                         src="../assets/DesignLove.png"
                         style="height: 400px"
                       />
-                      <div class="card-body text-left">
+                      <div class="card-body">
                         <h6 class="card-title">10 of the best</h6>
                         <p class="card-text">
                           10 of the best... modern minimalist rugs
@@ -56,7 +56,7 @@
                         src="../assets/DesignLove2.png"
                         style="height: 400px"
                       />
-                      <div class="card-body text-left">
+                      <div class="card-body">
                         <h6 class="card-title">Interiors, Architecture</h6>
                         <p class="card-text">
                           Zen Den | A 1960s ranch style bungalow updated
@@ -72,7 +72,7 @@
                         src="../assets/DesignLove3.png"
                         style="height: 400px"
                       />
-                      <div class="card-body text-left">
+                      <div class="card-body">
                         <h6 class="card-title">
                           Design Hunter loves, Wellness & Beauty
                         </h6>
@@ -92,7 +92,7 @@
                         src="../assets/DesignLove4.png"
                         style="height: 400px"
                       />
-                      <div class="card-body text-left">
+                      <div class="card-body">
                         <h6 class="card-title">Most wanted</h6>
                         <p class="card-text">
                           This month's most wanted: February
@@ -108,7 +108,7 @@
                         src="../assets/DesignLove5.png"
                         style="height: 400px"
                       />
-                      <div class="card-body text-left">
+                      <div class="card-body">
                         <h6 class="card-title">Interiors</h6>
                         <p class="card-text">
                           Store decor | a Japandi style interior for shoe brand
@@ -125,7 +125,7 @@
                         src="../assets/DesignLove6.png"
                         style="height: 400px"
                       />
-                      <div class="card-body text-left">
+                      <div class="card-body">
                         <h6 class="card-title">Technology</h6>
                         <p class="card-text">
                           A new chapter in the history of Braun audio
@@ -184,6 +184,7 @@ export default {
 
 .card-body {
   padding: 16px 16px 16px 0;
+  text-align: left;
 }
 
 .btn {
