@@ -6,7 +6,9 @@
         <div class="col-lg-12"><h2>CONCRETE PLINTH HOUSE</h2></div>
       </div>
       <div class="col-lg-12 btn">
-        <h6 class="read-btn">READ MORE</h6>
+        <router-link class="link" to="/concrete-plinth-house">
+          <h6 class="read-btn">READ MORE</h6></router-link
+        >
       </div>
     </div>
   </div>
@@ -40,7 +42,7 @@ h2 {
   margin-top: 5rem;
 }
 .overlay {
-  height: 30rem;
+  height: 35rem;
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.6) 0%,
@@ -74,6 +76,9 @@ h2 {
   transition-duration: 500ms;
 }
 
+.link {
+  text-decoration: none;
+}
 .read-btn:hover {
   background-color: white;
   color: black;

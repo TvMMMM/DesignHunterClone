@@ -5,16 +5,18 @@
       <div class="col-lg-6 col-md-12 col-sm-12 post">
         <article class="article">
           <div>
-            <img
-              class="img-fluid"
-              style="height: 700px"
-              alt="100%x280"
-              src="../../assets/Interiors/post1.png"
-            />
-            <div class="article-body">
-              <h6 class="article-title">Interiors</h6>
-              <p class="article-text">Concrete Plinth House</p>
-            </div>
+            <router-link class="link" to="/concrete-plinth-house">
+              <img
+                class="img-fluid"
+                style="height: 700px"
+                alt="100%x280"
+                src="../../assets/Interiors/post1.png"
+              />
+              <div class="article-body">
+                <h6 class="article-title">Interiors</h6>
+                <p class="article-text">Concrete Plinth House</p>
+              </div>
+            </router-link>
           </div>
         </article>
         <article class="article">
@@ -269,5 +271,10 @@ export default {
 
 .article-text {
   font-size: 14px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
 }
 </style>

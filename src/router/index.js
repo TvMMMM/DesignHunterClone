@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import "animate.css";
 import HomeView from "../views/HomeView.vue";
-import InteriorsView from "../views/InteriorsView.vue";
 import DesignView from "../views/DesignView.vue";
 import LifestyleView from "../views/LifestyleView.vue";
 
@@ -25,7 +25,19 @@ const routes = [
   {
     path: "/interiors",
     name: "interiors",
-    component: InteriorsView,
+    component: () => import("@/views/InteriorsView.vue"),
+    // children: [
+    //   {
+    //     path: "/concrete-plinth-house",
+    //     name: "Concrete Plinth House",
+    //     component: () => import("@/views/DetailPostView.vue"),
+    //   },
+    // ],
+  },
+  {
+    path: "/concrete-plinth-house",
+    name: "concrete-plinth-house",
+    component: () => import("@/views/DetailPostView.vue"),
   },
   {
     path: "/design",
